@@ -1,0 +1,17 @@
+/* styles.css */
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    z-index: 1000;
+    color: white;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
