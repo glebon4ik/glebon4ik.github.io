@@ -2,8 +2,7 @@
     position: fixed;
     top: -10px;
     z-index: 1000;
-    color: white; /* Цвет текста для снежинок */
-    background-color: red; /* Временный цвет фона для отладки */
+    color: white;
     user-select: none;
     pointer-events: none;
     animation: fall linear infinite;
