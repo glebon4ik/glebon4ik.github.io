@@ -1,6 +1,7 @@
 function createSnowFlake() {
     const snowFlake = document.createElement('div');
     snowFlake.classList.add('snowflake');
+    snowFlake.innerHTML = '❄'; // Добавляем символ снежинки
     snowFlake.style.left = Math.random() * window.innerWidth + 'px';
     snowFlake.style.animationDuration = Math.random() * 3 + 2 + 's';
     snowFlake.style.opacity = Math.random();
