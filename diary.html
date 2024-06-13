@@ -45,15 +45,34 @@
             <a href="diary.html">Дневник</a>
         </nav>
     </header>
-    <main class="container">
-        <article class="diary-entry">
-            <h2>Запись от 05.06.2024</h2>
-            <p>Сегодня я работал над улучшением своего веб-сайта. Надеюсь, он станет полезным инструментом для отслеживания моего прогресса и общения с друзьями и коллегами.</p>
-        </article>
+    <main class="container" id="diary-entries">
+        <!-- Посты будут загружены сюда -->
     </main>
     <footer>
         <p>© Грицай Глеб Валентинович, 2024. Все права защищены.</p>
     </footer>
     <script src="snow.js"></script>
+    <script>
+        fetch('posts.json')
+            .then(response => response.json())
+            .then(posts => {
+                const diaryEntries = document.getElementById('diary-entries');
+                posts.forEach(post => {
+                    const article = document.createElement('article');
+                    article.classList.add('diary-entry');
+                    
+                    const h2 = document.createElement('h2');
+                    h2.textContent = post.title;
+                    article.appendChild(h2);
+
+                    const p = document.createElement('p');
+                    p.textContent = post.content;
+                    article.appendChild(p);
+
+                    diaryEntries.appendChild(article);
+                });
+            })
+            .catch(error => console.error('Error loading posts:', error));
+    </script>
 </body>
 </html>
