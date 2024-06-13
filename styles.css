@@ -185,3 +185,22 @@ footer {
     margin: 10px 0 0;
     font-size: 18px;
 }
+.coming-soon {
+    background-color: var(--header-footer-bg-color);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.coming-soon h2 {
+    margin: 0;
+    font-size: 36px;
+    color: var(--accent-color);
+}
+
+.coming-soon p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
