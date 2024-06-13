@@ -167,3 +167,21 @@ footer {
         font-size: 14px;
     }
 }
+.diary-entry {
+    background-color: var(--header-footer-bg-color);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.diary-entry h2 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+.diary-entry p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
