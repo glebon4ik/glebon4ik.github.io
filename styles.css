@@ -35,6 +35,8 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-size: 18px;
+    display: inline-block;
+    line-height: 1.5;
 }
 
 nav a:hover {
@@ -46,6 +48,8 @@ nav a:hover {
     margin: 20px auto;
     padding: 0 20px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -68,6 +72,30 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.skill {
+    background-color: var(--header-footer-bg-color);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+.skill h2 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+.skill p {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+footer {
+    margin-top: auto;
+    color: var(--text-color);
+}
+
 .snowflake {
     position: fixed;
     top: -10px;
@@ -78,10 +106,13 @@ p {
     animation: fall linear infinite;
 }
 
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-    }
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
 }
 
 /* Media Queries for Responsive Design */
