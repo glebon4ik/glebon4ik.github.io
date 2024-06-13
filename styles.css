@@ -99,6 +99,8 @@ footer {
     margin-top: auto;
     color: var(--text-color);
     width: 100%;
+    position: relative; /* Ensure it's relative for correct positioning */
+    bottom: 0; /* Align at the bottom */
 }
 
 .snowflake {
