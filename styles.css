@@ -76,7 +76,7 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.skill, .blog-post {
+.skill, .blog-post, .contact-info {
     background-color: var(--header-footer-bg-color);
     margin: 10px 0;
     padding: 10px;
@@ -93,6 +93,19 @@ p {
 .skill p, .blog-post p {
     margin: 10px 0 0;
     font-size: 18px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    font-size: 24px; /* Увеличение размера логотипов */
+    margin-right: 10px;
+    color: var(--accent-color);
 }
 
 footer {
