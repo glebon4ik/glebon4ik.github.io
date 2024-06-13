@@ -7,6 +7,9 @@ function createSnowFlake() {
     snowFlake.style.opacity = Math.random();
     snowFlake.style.fontSize = `${Math.random() * 10 + 10}px`;
 
+    snowFlake.style.position = 'fixed'; // Изменено с 'absolute' на 'fixed'
+    snowFlake.style.top = '0'; // Добавлено
+
     document.body.appendChild(snowFlake);
 
     setTimeout(() => {
@@ -15,7 +18,7 @@ function createSnowFlake() {
 }
 
 function initSnowEffect() {
-    setInterval(createSnowFlake, 200);
+    setInterval(createSnowFlake, 500); // Увеличена частота создания снежинок
 }
 
 document.addEventListener('DOMContentLoaded', initSnowEffect);

@@ -94,6 +94,7 @@ p {
 footer {
     margin-top: auto;
     color: var(--text-color);
+    width: 100%;
 }
 
 .snowflake {
@@ -106,13 +107,9 @@ footer {
     animation: fall linear infinite;
 }
 
-a {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--accent-color);
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
 }
 
 /* Media Queries for Responsive Design */
