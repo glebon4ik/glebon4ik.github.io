@@ -6,85 +6,24 @@
     <title>Дневник - Личная Веб-страница</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #111;
-            color: #ddd;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #222;
-            text-align: center;
-            padding: 20px 0;
-        }
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #ddd;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            color: #ffcc00;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-            flex: 1;
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #ffcc00;
-        }
-        .diary-entry {
-            background-color: #222;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .diary-entry h2 {
-            margin-top: 0;
-            font-size: 24px;
-        }
-        .diary-entry p {
-            font-size: 18px;
-        }
-        footer {
-            background-color: #222;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: auto;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Дневник</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="portfolio.html">Портфолио</a>
+            <a href="blog.html">Блог</a>
+            <a href="contact.html">Контакты</a>
+            <a href="diary.html">Дневник</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">Главная</a>
-        <a href="portfolio.html">Портфолио</a>
-        <a href="blog.html">Блог</a>
-        <a href="contact.html">Контакты</a>
-        <a href="diary.html">Дневник</a>
-    </nav>
-    <div class="container">
-        <div class="diary-entry">
+    <main class="container">
+        <article class="diary-entry">
             <h2>Запись от 05.06.2024</h2>
             <p>Сегодня я работал над улучшением своего веб-сайта. Надеюсь, он станет полезным инструментом для отслеживания моего прогресса и общения с друзьями и коллегами.</p>
-        </div>
-    </div>
+        </article>
+    </main>
     <footer>
         <p>© Глеб, 2024. Все права защищены.</p>
     </footer>
