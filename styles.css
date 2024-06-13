@@ -28,6 +28,11 @@ nav {
     background-color: var(--nav-bg-color);
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    justify-content: center; /* Центрируем навигационные элементы */
+    align-items: center; /* Центрируем по вертикали */
+    margin-top: 10px; /* Отступ сверху */
+    margin-bottom: -20px; /* Отступ снизу для перемещения панели */
 }
 
 nav a {
@@ -36,7 +41,6 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     display: inline-block;
-    line-height: 1.5;
 }
 
 nav a:hover {
@@ -114,6 +118,10 @@ footer {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Вертикальное расположение навигации на узких экранах */
+    }
+
     nav a {
         display: block;
         margin: 10px 0;
