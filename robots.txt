@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /private/
 Allow: /
 
-Sitemap: https://ваш-сайт.com/sitemap.xml
+Sitemap: https://glebon4ik.github.io/sitemap.xml
